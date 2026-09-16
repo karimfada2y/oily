@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OILO SCENTS | Egyptian Fragrance Excellence</title>
+    <meta name="description" content="Premium fragrance oils and incense made in Egypt for perfume manufacturers, brands, and wholesale partners.">
+    <meta property="og:title" content="OILO SCENTS | Egyptian Fragrance Excellence">
+    <meta property="og:description" content="Premium Egyptian fragrance oils, incense, and wholesale solutions from Alexandria.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0f0f0f;
+            --bg-secondary: #1a1a1a;
+            --bg-card: #1c1c1c;
+            --bg-card-hover: #252525;
+            --green: #22c55e;
+            --green-dark: #16a34a;
+            --green-glow: rgba(34, 197, 94, 0.15);
+            --gold: #d4a853;
+            --gold-light: #e8c97a;
+            --cream: #f5f0e8;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #6b6b6b;
+            --border: #2a2a2a;
+            --border-light: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scrollbar-width: thin;
+            scrollbar-color: var(--green) var(--bg-secondary);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        body.rtl {
+            direction: rtl;
+            font-family: 'Noto Kufi Arabic', 'Inter', sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ========== NAVIGATION ========== */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: all 0.4s ease;
+            background: transparent;
+        }
+
+        nav.scrolled {
+            background: rgba(15, 15, 15, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .nav-logo img {
+            height: 80px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--green);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .lang-toggle {
+            background: none;
+            border: 1px solid var(--border-light);
+            color: var(--text-secondary);
+            padding: 6px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .lang-toggle:hover {
+            border-color: var(--green);
+            color: var(--green);
+        }
+
+        .nav-whatsapp {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--green);
+            color: #000;
+            padding: 8px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-whatsapp:hover {
+            background: var(--green-dark);
+            transform: translateY(-1px);
+        }
+
+        .nav-whatsapp svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu-btn svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* ========== HERO ========== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 120px 0 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 80%;
+            height: 80%;
+            background: radial-gradient(circle, var(--green-glow) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 13px;
+            color: var(--green);
+            font-weight: 500;
+            margin-bottom: 32px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s ease forwards 0.2s;
+        }
+
+        .hero-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--green);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(48px, 6vw, 80px);
+            font-weight: 700;
+            line-height: 1.05;
+            margin-bottom: 8px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.8s ease forwards 0.4s;
+        }
+
+        .hero h1 .green {
+            color: var(--green);
+        }
+
+        .hero-tagline {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: var(--gold);
+            font-style: italic;
+            margin-bottom: 24px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s ease forwards 0.5s;
+        }
+
+        .hero-desc {
+            font-size: 17px;
+            color: var(--text-secondary);
+            max-width: 480px;
+            line-height: 1.7;
+            margin-bottom: 40px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s ease forwards 0.6s;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s ease forwards 0.7s;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--green);
+            color: #000;
+            padding: 14px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background: var(--green-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(34, 197, 94, 0.3);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: var(--text-primary);
+            padding: 14px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            border: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--green);
+            color: var(--green);
+            transform: translateY(-2px);
+        }
+
+        .hero-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transform: translateX(40px);
+            animation: fadeLeft 1s ease forwards 0.5s;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            max-height: 550px;
+            object-fit: contain;
+            filter: drop-shadow(0 20px 60px rgba(34, 197, 94, 0.15));
+            transition: transform 0.5s ease;
+        }
+
+        .hero-image:hover img {
+            transform: scale(1.03) rotate(1deg);
+        }
+
+        .hero-image-badge {
+            position: absolute;
+            bottom: 40px;
+            left: -20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .hero-image-badge .badge-icon {
+            width: 44px;
+            height: 44px;
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--green);
+        }
+
+        .hero-image-badge .badge-text {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .hero-image-badge .badge-text strong {
+            display: block;
+            color: var(--text-primary);
+            font-size: 15px;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards 1s;
+        }
+
+        .scroll-indicator .mouse {
+            width: 24px;
+            height: 38px;
+            border: 2px solid var(--text-muted);
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .scroll-indicator .mouse::after {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 8px;
+            background: var(--green);
+            border-radius: 2px;
+            animation: scrollDown 1.5s ease infinite;
+        }
+
+        /* ========== MARQUEE ========== */
+        .marquee-section {
+            padding: 32px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .marquee-track {
+            display: flex;
+            animation: marquee 20s linear infinite;
+            width: max-content;
+        }
+
+        .marquee-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0 40px;
+            white-space: nowrap;
+            font-size: 14px;
+            color: var(--text-muted);
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .marquee-item .dot {
+            width: 6px;
+            height: 6px;
+            background: var(--green);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        /* ========== ABOUT ========== */
+        .about {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .section-number {
+            font-size: 13px;
+            color: var(--green);
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-number::before {
+            content: '';
+            width: 40px;
+            height: 2px;
+            background: var(--green);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+            margin-top: 60px;
+        }
+
+        .about-text p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .about-quote {
+            background: var(--bg-card);
+            border-left: 3px solid var(--green);
+            padding: 24px 28px;
+            border-radius: 0 12px 12px 0;
+            margin-top: 32px;
+        }
+
+        .about-quote p {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-style: italic;
+            color: var(--cream);
+            margin: 0;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            transition: all 0.4s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .stat-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stat-card:hover {
+            border-color: var(--green);
+            background: var(--bg-card-hover);
+            transform: translateY(-4px);
+        }
+
+        .stat-card .stat-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+        }
+
+        .stat-card .stat-value {
+            font-size: 15px;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .stat-card .stat-value .green {
+            color: var(--green);
+        }
+
+        /* ========== PRODUCTS ========== */
+        .products {
+            padding: 120px 0;
+            background: var(--bg-secondary);
+            position: relative;
+        }
+
+        .products-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .products-header .section-number {
+            justify-content: center;
+        }
+
+        .products-header .section-number::before {
+            display: none;
+        }
+
+        .products-categories {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+
+        .category-tag {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            color: var(--green);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .product-showcase {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-top: 60px;
+        }
+
+        .product-image-wrap {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a2a1a, #0f1f0f);
+            border: 1px solid var(--border);
+            aspect-ratio: 4/5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .product-image-wrap:hover img {
+            transform: scale(1.05);
+        }
+
+        .product-image-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .product-tag {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 12px;
+            color: var(--text-primary);
+            font-weight: 500;
+            width: fit-content;
+        }
+
+        .product-tag.green {
+            background: rgba(34, 197, 94, 0.2);
+            color: var(--green);
+        }
+
+        .product-details {
+            padding: 20px 0;
+        }
+
+        .product-details .product-number {
+            font-size: 13px;
+            color: var(--green);
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+
+        .product-details h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .product-details .product-arabic {
+            font-size: 18px;
+            color: var(--gold);
+            margin-bottom: 24px;
+        }
+
+        .product-details p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+
+        .product-features {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 36px;
+        }
+
+        .product-feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .product-feature .check {
+            width: 22px;
+            height: 22px;
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .product-feature .check svg {
+            width: 12px;
+            height: 12px;
+            color: var(--green);
+        }
+
+        /* ========== PRICE LIST ========== */
+        .prices {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .prices-inner {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .prices-content .section-title {
+            margin-bottom: 16px;
+        }
+
+        .prices-content p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+
+        .prices-info {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 32px;
+        }
+
+        .prices-info .info-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .prices-info .info-icon svg {
+            width: 20px;
+            height: 20px;
+            color: var(--green);
+        }
+
+        .prices-info .info-text {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .prices-info .info-text strong {
+            color: var(--text-primary);
+        }
+
+        .pdf-viewer {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            min-height: 500px;
+        }
+
+        .pdf-toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .pdf-toolbar .pdf-title {
+            font-size: 13px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pdf-toolbar .pdf-title svg {
+            width: 16px;
+            height: 16px;
+            color: #ef4444;
+        }
+
+        .pdf-toolbar .pdf-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .pdf-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .pdf-btn.view {
+            background: rgba(34, 197, 94, 0.1);
+            color: var(--green);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+        }
+
+        .pdf-btn.view:hover {
+            background: rgba(34, 197, 94, 0.2);
+        }
+
+        .pdf-btn.download {
+            background: var(--green);
+            color: #000;
+            border: none;
+        }
+
+        .pdf-btn.download:hover {
+            background: var(--green-dark);
+        }
+
+        .pdf-btn svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .pdf-frame {
+            width: 100%;
+            height: 460px;
+            border: none;
+        }
+
+        /* ========== CONTACT ========== */
+        .contact {
+            padding: 120px 0;
+            background: var(--bg-secondary);
+        }
+
+        .contact-inner {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-inner .section-number {
+            justify-content: center;
+        }
+
+        .contact-inner .section-number::before {
+            display: none;
+        }
+
+        .contact-inner .section-title {
+            margin-bottom: 16px;
+        }
+
+        .contact-inner > p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 48px;
+            line-height: 1.7;
+        }
+
+        .contact-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 48px;
+        }
+
+        .contact-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .contact-card:hover {
+            border-color: var(--green);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-card .card-icon {
+            width: 52px;
+            height: 52px;
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-card .card-icon svg {
+            width: 24px;
+            height: 24px;
+            color: var(--green);
+        }
+
+        .contact-card .card-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-card .card-value {
+            font-size: 15px;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            padding: 48px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .footer-logo img {
+            height: 32px;
+            width: auto;
+        }
+
+        .footer-text {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .footer-text .green {
+            color: var(--green);
+        }
+
+        .footer-location {
+            font-size: 13px;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* ========== ANIMATIONS ========== */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeLeft {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        @keyframes scrollDown {
+            0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+            100% { opacity: 0; transform: translateX(-50%) translateY(12px); }
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .fade-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .fade-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 968px) {
+            .hero-inner {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .hero-content {
+                order: 1;
+            }
+
+            .hero-image {
+                order: 2;
+            }
+
+            .hero-desc {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-badge {
+                justify-content: center;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+
+            .product-showcase {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .prices-inner {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                gap: 24px;
+                text-align: center;
+            }
+
+            .scroll-indicator {
+                display: none;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .nav-logo img {
+                height: 55px;
+            }
+
+            .nav-whatsapp {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+
+            .nav-whatsapp svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            .lang-toggle {
+                padding: 5px 10px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+                min-height: auto;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-tagline {
+                font-size: 16px;
+            }
+
+            .hero-desc {
+                font-size: 15px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-buttons .btn-primary,
+            .hero-buttons .btn-secondary {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+
+            .hero-image img {
+                max-height: 350px;
+            }
+
+            .hero-image-badge {
+                display: none;
+            }
+
+            .marquee-item {
+                padding: 0 24px;
+                font-size: 12px;
+            }
+
+            .about {
+                padding: 80px 0;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-card {
+                padding: 20px;
+            }
+
+            .products {
+                padding: 80px 0;
+            }
+
+            .product-details h3 {
+                font-size: 28px;
+            }
+
+            .product-details .product-arabic {
+                font-size: 16px;
+            }
+
+            .product-details p {
+                font-size: 14px;
+            }
+
+            .prices {
+                padding: 80px 0;
+            }
+
+            .pdf-viewer {
+                min-height: 300px;
+            }
+
+            .pdf-frame {
+                height: 320px;
+            }
+
+            .pdf-toolbar {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .contact {
+                padding: 80px 0;
+            }
+
+            .contact-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-card {
+                padding: 20px;
+            }
+
+            footer {
+                padding: 32px 0;
+            }
+
+            .footer-logo img {
+                height: 28px;
+            }
+
+            .footer-text {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .product-details h3 {
+                font-size: 24px;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+        }
+
+        /* ========== MOBILE MENU ========== */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(15, 15, 15, 0.98);
+            z-index: 999;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .mobile-menu a:hover {
+            color: var(--green);
+        }
+
+        .mobile-menu-close {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            cursor: pointer;
+        }
+
+        .mobile-menu-close svg {
+            width: 28px;
+            height: 28px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#top" class="nav-logo">
+                <img src="assets/oilo-logo.png" alt="OILO SCENTS">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" data-en="About" data-ar="عن الشركة">About</a></li>
+                <li><a href="#products" data-en="Products" data-ar="المنتجات">Products</a></li>
+                <li><a href="#prices" data-en="Price List" data-ar="قائمة الأسعار">Price List</a></li>
+                <li><a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="lang-toggle" id="langToggle" onclick="toggleLang()">العربية</button>
+                <a href="https://wa.me/201030360608" target="_blank" class="nav-whatsapp">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp
+                </a>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" onclick="toggleMobileMenu()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <a href="#about" onclick="toggleMobileMenu()" data-en="About" data-ar="عن الشركة">About</a>
+        <a href="#products" onclick="toggleMobileMenu()" data-en="Products" data-ar="المنتجات">Products</a>
+        <a href="#prices" onclick="toggleMobileMenu()" data-en="Price List" data-ar="قائمة الأسعار">Price List</a>
+        <a href="#contact" onclick="toggleMobileMenu()" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+        <button class="lang-toggle" onclick="toggleLang(); toggleMobileMenu();" id="langToggleMobile">العربية</button>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <div class="hero-badge" data-en="Made in Egypt · Alexandria" data-ar="صنع في مصر · الإسكندرية">Made in Egypt · Alexandria</div>
+                    <h1 data-en='Pour the<br><span class="green">scent</span> of Egypt' data-ar='اكتشف<br><span class="green">عطورك</span> المميزة'>Pour the<br><span class="green">scent</span> of Egypt</h1>
+                    <div class="hero-tagline" data-en="Egyptian Fragrance Excellence" data-ar="جودة مصرية • ثبات يدوم • أسعار تنافسية">Egyptian Fragrance Excellence</div>
+                    <p class="hero-desc" data-en="Premium fragrance oils with high similarity, consistency, and performance — created for perfume manufacturers, brands, and wholesale partners." data-ar="زيوت عطرية فاخرة بأعلى درجات التشابه والثبات والأداء — مُصمّمة لصنّاع العطور والعلامات التجارية والشركاء بالجملة.">Premium fragrance oils with high similarity, consistency, and performance — created for perfume manufacturers, brands, and wholesale partners.</p>
+                    <div class="hero-buttons">
+                        <a href="#prices" class="btn-primary" data-en="View Price List" data-ar="عرض قائمة الأسعار">
+                            <span data-en="View Price List" data-ar="عرض قائمة الأسعار">View Price List</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+                        </a>
+                        <a href="https://wa.me/201030360608" target="_blank" class="btn-secondary" data-en="WhatsApp" data-ar="واتساب">
+                            <span data-en="WhatsApp" data-ar="واتساب">WhatsApp</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/oilo-teriaq-500g.jpg" alt="OILO TERIAQ 500G Fragrance Oil">
+                    <div class="hero-image-badge">
+                        <div class="badge-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <div class="badge-text">
+                            <strong data-en="OILO TERIAQ" data-ar="أويلو ترياق">OILO TERIAQ</strong>
+                            <span data-en="500G · Fragrance Oil" data-ar="500 جرام · زيت عطري">500G · Fragrance Oil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span data-en="Scroll" data-ar="تصفّح">Scroll</span>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-item"><span class="dot"></span> <span data-en="Premium quality" data-ar="جودة فاخرة">Premium quality</span></div>
+            <div class="marquee-item"><span class="dot"></span> <span data-en="High similarity" data-ar="تشابه عالي">High similarity</span></div>
+            <div class="marquee-item"><span class="dot"></span> <span data-en="Consistency" data-ar="ثبات">Consistency</span></div>
+            <div class="marquee-item"><span class="dot"></span> <span data-en="Performance" data-ar="أداء">Performance</span></div>
+            <div class="marquee-item"><span class="dot"></span> <span data-en="Competitive prices" data-ar="أسعار تنافسية">Competitive prices</span></div>
+            <div class="marquee-item"><span class="dot"></span> <span data-en="Wholesale" data-ar="الجملة">Wholesale</span></div>
+            <div class="marquee-item"><span class="dot"></span> <span data-en="Premium quality" data-ar="جودة فاخرة">Premium quality</span></div>
+            <div class="marquee-item"><span class="dot"></span> <span data-en="High similarity" data-ar="تشابه عالي">High similarity</span></div>
+            <div class="marquee-item"><span class="dot"></span> <span data-en="Consistency" data-ar="ثبات">Consistency</span></div>
+            <div class="marquee-item"><span class="dot"></span> <span data-en="Performance" data-ar="أداء">Performance</span></div>
+            <div class="marquee-item"><span class="dot"></span> <span data-en="Competitive prices" data-ar="أسعار تنافسية">Competitive prices</span></div>
+            <div class="marquee-item"><span class="dot"></span> <span data-en="Wholesale" data-ar="الجملة">Wholesale</span></div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-number fade-in" data-en="01 · The OILO Standard" data-ar="01 · معيار OILO">01 · The OILO Standard</div>
+            <h2 class="section-title fade-in" data-en="Precision in every formulation." data-ar="دقة في كل تركيبة.">Precision in every formulation.</h2>
+            <div class="about-grid">
+                <div class="about-text fade-in-left">
+                    <p data-en="OILO SCENTS is an Egyptian manufacturer specializing in premium fragrance oils. Carefully selected raw materials and precise production standards deliver dependable fragrance solutions, batch after batch." data-ar="أويلو سينتس هي شركة تصنيع مصرية متخصصة في زيوت العطور الفاخرة. المواد الخام المختارة بعناية ومعايير الإنتاج الدقيقة تقدم حلول عطرية موثوقة، دفعة بعد دفعة.">OILO SCENTS is an Egyptian manufacturer specializing in premium fragrance oils. Carefully selected raw materials and precise production standards deliver dependable fragrance solutions, batch after batch.</p>
+                    <p data-en="At OILO SCENTS, we make excellence in fragrance accessible — combining carefully selected raw materials with precise production standards to create fragrance solutions trusted by perfume manufacturers, brands, and wholesale traders." data-ar="في أويلو سينتس، نجعل التميز في العطور متاحًا — نجمع بين المواد الخام المختارة بعناية ومعايير الإنتاج الدقيقة لإنشاء حلول عطرية يثق بها صنّاع العطور والعلامات التجارية والتجار بالجملة.">At OILO SCENTS, we make excellence in fragrance accessible — combining carefully selected raw materials with precise production standards to create fragrance solutions trusted by perfume manufacturers, brands, and wholesale traders.</p>
+                    <div class="about-quote">
+                        <p data-en='"We make excellence in fragrance accessible."' data-ar='«نجعل التميز في العطور متاحًا.»'>"We make excellence in fragrance accessible."</p>
+                    </div>
+                </div>
+                <div class="about-stats fade-in-right">
+                    <div class="stat-card">
+                        <div class="stat-label" data-en="Origin" data-ar="المصدر">Origin</div>
+                        <div class="stat-value" data-en="Proudly made in <span class='green'>Egypt</span>" data-ar="صنع في <span class='green'>مصر</span> بفخر">Proudly made in <span class='green'>Egypt</span></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label" data-en="Built for" data-ar="مصمم لـ">Built for</div>
+                        <div class="stat-value" data-en="Manufacturers &amp; brands" data-ar="صنّاع العطور والعلامات التجارية">Manufacturers &amp; brands</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label" data-en="Supply" data-ar="التوريد">Supply</div>
+                        <div class="stat-value" data-en="Wholesale partners" data-ar="شركاء الجملة">Wholesale partners</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label" data-en="Quality" data-ar="الجودة">Quality</div>
+                        <div class="stat-value" data-en="<span class='green'>Premium</span> formulation" data-ar="تركيبة <span class='green'>فاخرة</span>">Premium formulation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="products-header">
+                <div class="section-number fade-in" data-en="02 · OILO Collection" data-ar="02 · مجموعة OILO">02 · OILO Collection</div>
+                <h2 class="section-title fade-in" data-en="Product stories" data-ar="قصة المنتجات">Product stories</h2>
+                <div class="products-categories fade-in">
+                    <span class="category-tag" data-en="زيوت عطرية" data-ar="زيوت عطرية">زيوت عطرية</span>
+                </div>
+            </div>
+            <div class="product-showcase">
+                <div class="product-image-wrap fade-in-left">
+                    <img src="assets/oilo-teriaq-500g.jpg" alt="OILO TERIAQ Fragrance Oil">
+                    <div class="product-image-overlay">
+                        <span class="product-tag" data-en="01 · 500G" data-ar="01 · 500 جرام">01 · 500G</span>
+                        <span class="product-tag green" data-en="OILO TERIAQ" data-ar="أويلو ترياق">OILO TERIAQ</span>
+                    </div>
+                </div>
+                <div class="product-details fade-in-right">
+                    <div class="product-number" data-en="01500G · OILO TERIAQ" data-ar="01500 جرام · أويلو ترياق">01500G · OILO TERIAQ</div>
+                    <h3 data-en="Fragrance Oils" data-ar="زيوت عطرية">Fragrance Oils</h3>
+                    <div class="product-arabic" data-en="زيوت عطرية" data-ar="زيوت عطرية">زيوت عطرية</div>
+                    <p data-en="High-similarity fragrance oils engineered for consistency, quality, and lasting performance. Each formulation is precision-crafted to deliver exceptional results for perfume manufacturers and brands." data-ar="زيوت عطرية عالية التشابه مُصمّمة للثبات الجودة والأداء الدائم. كل تركيبة مصنوعة بدقة لتقديم نتائج استثنائية لصنّاع العطور والعلامات التجارية.">High-similarity fragrance oils engineered for consistency, quality, and lasting performance. Each formulation is precision-crafted to deliver exceptional results for perfume manufacturers and brands.</p>
+                    <div class="product-features">
+                        <div class="product-feature">
+                            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                            <span data-en="High similarity to original fragrances" data-ar="تشابه عالي مع العطور الأصلية">High similarity to original fragrances</span>
+                        </div>
+                        <div class="product-feature">
+                            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                            <span data-en="Consistent batch-to-batch quality" data-ar="جودة ثابتة بين كل دفعة">Consistent batch-to-batch quality</span>
+                        </div>
+                        <div class="product-feature">
+                            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                            <span data-en="Premium raw materials" data-ar="مواد خام فاخرة">Premium raw materials</span>
+                        </div>
+                        <div class="product-feature">
+                            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                            <span data-en="Competitive wholesale pricing" data-ar="أسعار جملة تنافسية">Competitive wholesale pricing</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/201030360608" target="_blank" class="btn-primary">
+                        <span data-en="Inquire on WhatsApp" data-ar="استفسر عبر واتساب">Inquire on WhatsApp</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICE LIST -->
+    <section class="prices" id="prices">
+        <div class="container">
+            <div class="prices-inner">
+                <div class="prices-content fade-in-left">
+                    <div class="section-number" data-en="03 · Price List" data-ar="03 · قائمة الأسعار">03 · Price List</div>
+                    <h2 class="section-title" data-en="Our complete catalogue, ready to view." data-ar="دليلنا الكامل، جاهز للمشاهدة.">Our complete catalogue, ready to view.</h2>
+                    <p data-en="Browse all 22 pages directly here, open the document in a new tab, or download it for your records." data-ar="تصفح جميع الصفحات الـ 22 مباشرة من هنا، أو افتح المستند في تبويب جديد، أو قم بتحميله لسجلاتك.">Browse all 22 pages directly here, open the document in a new tab, or download it for your records.</p>
+                    <div class="prices-info">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        </div>
+                        <div class="info-text">
+                            <strong data-en="OILO SCENTS · PDF · 22 pages" data-ar="أويلو سينتس · PDF · 22 صفحة">OILO SCENTS · PDF · 22 pages</strong><br>
+                            <span data-en="Alexandria · Egypt" data-ar="الإسكندرية · مصر">Alexandria · Egypt</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="assets/oilo-scents-price-list.pdf" target="_blank" class="btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            <span data-en="Open PDF" data-ar="فتح PDF">Open PDF</span>
+                        </a>
+                        <a href="assets/oilo-scents-price-list.pdf" download class="btn-secondary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            <span data-en="Download PDF" data-ar="تحميل PDF">Download PDF</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="pdf-viewer fade-in-right">
+                    <div class="pdf-toolbar">
+                        <div class="pdf-title">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/></svg>
+                            <span data-en="oilo-scents-price-list.pdf" data-ar="قائمة-أسعار-أويلو-سينتس.pdf">oilo-scents-price-list.pdf</span>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="assets/oilo-scents-price-list.pdf" target="_blank" class="pdf-btn view">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                <span data-en="Open" data-ar="فتح">Open</span>
+                            </a>
+                            <a href="assets/oilo-scents-price-list.pdf" download class="pdf-btn download">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                <span data-en="Download" data-ar="تحميل">Download</span>
+                            </a>
+                        </div>
+                    </div>
+                    <iframe class="pdf-frame" src="assets/oilo-scents-price-list.pdf" title="OILO SCENTS Price List"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-inner">
+                <div class="section-number fade-in" data-en="Alexandria · Egypt" data-ar="الإسكندرية · مصر">Alexandria · Egypt</div>
+                <h2 class="section-title fade-in" data-en="Start a fragrance conversation." data-ar="ابدأ حوارًا عطريًا.">Start a fragrance conversation.</h2>
+                <p class="fade-in" data-en="For products, pricing, and wholesale enquiries, speak directly with OILO SCENTS." data-ar="للمنتجات والأسعار واستفسارات الجملة، تواصل مباشرة مع أويلو سينتس.">For products, pricing, and wholesale enquiries, speak directly with OILO SCENTS.</p>
+                <div class="contact-cards">
+                    <a href="https://wa.me/201030360608" target="_blank" class="contact-card fade-in">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </div>
+                        <div class="card-label" data-en="WhatsApp" data-ar="واتساب">WhatsApp</div>
+                        <div class="card-value">01030360608</div>
+                    </a>
+                    <a href="tel:+201030360608" class="contact-card fade-in">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div class="card-label" data-en="Call us" data-ar="اتصل بنا">Call us</div>
+                        <div class="card-value">01030360608</div>
+                    </a>
+                    <a href="https://www.instagram.com/oiloscents2026" target="_blank" class="contact-card fade-in">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </div>
+                        <div class="card-label" data-en="Instagram" data-ar="انستغرام">Instagram</div>
+                        <div class="card-value">@oiloscents2026</div>
+                    </a>
+                    <a href="https://www.facebook.com/share/1C9AdoFcfj/" target="_blank" class="contact-card fade-in">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </div>
+                        <div class="card-label" data-en="Facebook" data-ar="فيسبوك">Facebook</div>
+                        <div class="card-value" data-en="OILO SCENTS" data-ar="OILO SCENTS">OILO SCENTS</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <img src="assets/oilo-logo.png" alt="OILO SCENTS">
+                </div>
+                <div class="footer-text">
+                    &copy; 2026 &middot; OILO SCENTS &middot; <span class="green" data-en="Proudly made in Egypt" data-ar="صنع في مصر بفخر">Proudly made in Egypt</span>
+                </div>
+                <div class="footer-location" data-en="Alexandria, Egypt" data-ar="الإسكندرية، مصر">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span data-en="Alexandria, Egypt" data-ar="الإسكندرية، مصر">Alexandria, Egypt</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ========== NAV SCROLL ==========
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ========== INTERSECTION OBSERVER FOR ANIMATIONS ==========
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .stat-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ========== LANGUAGE TOGGLE ==========
+        let isArabic = false;
+
+        function toggleLang() {
+            isArabic = !isArabic;
+            const html = document.documentElement;
+
+            if (isArabic) {
+                html.setAttribute('lang', 'ar');
+                html.setAttribute('dir', 'rtl');
+                document.body.classList.add('rtl');
+                document.getElementById('langToggle').textContent = 'English';
+                const mobileToggle = document.getElementById('langToggleMobile');
+                if (mobileToggle) mobileToggle.textContent = 'English';
+            } else {
+                html.setAttribute('lang', 'en');
+                html.setAttribute('dir', 'ltr');
+                document.body.classList.remove('rtl');
+                document.getElementById('langToggle').textContent = 'العربية';
+                const mobileToggle = document.getElementById('langToggleMobile');
+                if (mobileToggle) mobileToggle.textContent = 'العربية';
+            }
+
+            document.querySelectorAll('[data-en]').forEach(el => {
+                const text = isArabic ? el.getAttribute('data-ar') : el.getAttribute('data-en');
+                if (text) {
+                    el.innerHTML = text;
+                }
+            });
+        }
+
+        // ========== MOBILE MENU ==========
+        function toggleMobileMenu() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+        }
+
+        // ========== SMOOTH SCROLL FOR ANCHOR LINKS ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
